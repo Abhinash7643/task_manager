@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MyprofileComponent } from '../myprofile/myprofile.component';
 import { AboutComponent } from '../about/about.component';
+import { DashbordService } from '../dashbord.service';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { AboutComponent } from '../about/about.component';
     DashboardComponent,
     MyprofileComponent,
     AboutComponent
-  ]
+  ],
+  providers:[DashbordService]
 })
 export class AdminModule { }
